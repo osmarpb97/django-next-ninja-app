@@ -19,12 +19,7 @@ const LoginForm = () => {
       <h1 className="mt-12 text-xl font-bold leading-tight md:text-2xl">
         Log in to your account
       </h1>
-      <form
-        className="mx-10 mt-6 w-2/3"
-        onSubmit={() => {
-          loginMutation.mutate();
-        }}
-      >
+      <form className="mx-10 mt-6 w-2/3" onSubmit={loginMutation.mutate}>
         <div>
           <label className="block text-gray-700">Email Address</label>
           <input
